@@ -19,7 +19,8 @@ while 1:
 
         data = clientSocket.recv(1024)
         print("Received:", str(data.decode("utf-8")))
-        with open("C:\\Users\\bayef\\Desktop\\received.txt", "a") as file:
+       #TODO
+        with open("Desired path to copy ", "a") as file:
             file.write(str(data.decode("utf-8")))
             file.write("\n")
             file.close()
